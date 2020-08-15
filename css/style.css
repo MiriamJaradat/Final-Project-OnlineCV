@@ -61,7 +61,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:black;
+  background-color: black;
   font-size: 0.8em;
   min-width: 120px;
   box-shadow: 0px 4px 8px 0px #fcdff0;
@@ -72,13 +72,13 @@
   color: #fcdff0;
   padding: 10px 15px;
   text-decoration: none;
-  border: 1px  purple;
+  border: 1px purple;
   display: block;
 }
 
-.dropdown-content:hover{
+.dropdown-content:hover {
   background-color: lime;
-}/* !!!!!!!!! */
+} /* !!!!!!!!! */
 
 .dropdown:hover .dropdown-content:hover {
   display: block;
@@ -101,7 +101,6 @@
   font-size: 4em;
   text-align: center;
   color: #fdc9fd;
-  padding-right: 100px;
   width: 65%;
 }
 
@@ -112,8 +111,8 @@
   max-width: 100%;
   max-height: 100%;
   width: 25%;
-  margin: 10px;
-  margin-left: 20px;
+  margin: 10px 40px;
+ 
 }
 
 .categories {
@@ -128,8 +127,6 @@
   width: 25%;
   height: auto;
   padding: 20px;
-  font-size: 12px;
-  line-height: 15px;
   margin-bottom: 15px;
 }
 
@@ -163,7 +160,7 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: purple;
-  font-size: 1.7em;
+  font-size: 1.2em;
   cursor: pointer;
   margin: 0px auto;
   text-align: center;
@@ -181,6 +178,8 @@
 
 .description {
   text-align: justify;
+  font-size: 0.9em;
+  line-height: 15px;
 }
 
 .more {
@@ -196,20 +195,20 @@
   transition: transform 0.2s;
 }
 
-footer div {
+footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  height: 45px;
   margin: 0 auto;
   background-color: black;
 }
 
 .f-img {
-  width: auto;
-  height: 80%;
+  width: 35px;
+  height: 35px;
   align-content: center;
+  padding-top: 5px;
 }
 
 /*the Person*/
@@ -333,6 +332,7 @@ input[type="submit"] {
   border: none;
   border-radius: 8px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 /* theWork*/
@@ -408,6 +408,7 @@ input[type="submit"] {
   line-height: 1.5em;
   border-radius: 10px;
   margin-bottom: 10px;
+  margin-left: 70px;
 }
 
 .active-collapse-content {
@@ -460,7 +461,7 @@ input[type="submit"] {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: purple;
-  font-size: 1.7em;
+  font-size: 1.2em;
   cursor: pointer;
   margin: 0px auto;
   text-align: center;
@@ -496,9 +497,23 @@ input[type="submit"] {
 
 /* the Hobbies*/
 
+.hobbies-description > h2 {
+  color: purple;
+  padding: 30px;
+}
+
+.hobbies-description > p {
+  display: block;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-right: 20px;
+  text-align: justify;
+}
+
 .hobbies {
   display: flex;
-  width: 80%;
+  justify-content: space-evenly;
+  width: 90%;
   margin: 0px auto;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -506,12 +521,11 @@ input[type="submit"] {
 
 .mySlides {
   display: none;
-
   border-radius: 10px;
 }
 
 .slideshow-container {
-  padding-left: 20px;
+  width: 250%;
 }
 
 .dot {
@@ -553,9 +567,15 @@ input[type="submit"] {
   }
 }
 
+iframe {
+  width: 430px;
+  height: 315px;
+  border-radius: 10px;
+}
+
 /* responsiveness*/
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .nav-menu {
     display: none;
   }
@@ -623,7 +643,7 @@ input[type="submit"] {
     font-size: 1.5em;
   }
 
-/*the Person*/
+  /*the Person*/
 
   .random-things {
     display: flex;
@@ -634,7 +654,7 @@ input[type="submit"] {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
   .random-text {
     height: auto;
     padding: 20px;
@@ -642,20 +662,20 @@ input[type="submit"] {
     border: 2px solid purple;
     background-color: #fcdff0;
   }
-  
+
   .random-text h2 {
     font-size: 1.3em;
     padding: 5px 5px 15px 5px;
     color: purple;
   }
-  
+
   .random-text > p {
     font-size: 0.9em;
     padding-left: 5px;
     padding-bottom: 20px;
     line-height: 1.1em;
   }
-  
+
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -672,22 +692,21 @@ input[type="submit"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
   }
-  
+
   .contact {
     padding-left: 10px;
     border-radius: 15px;
     border: 2px solid purple;
     background-color: #fcdff0;
   }
-  
-/* courses & skills */
 
-  .projects{
+  /* courses & skills */
+
+  .projects {
     padding-top: 10px;
   }
-  
+
   .project-list {
     display: flex;
     flex-direction: column;
@@ -697,14 +716,14 @@ input[type="submit"] {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top:10px;
+    margin-top: 10px;
   }
-  
+
   .project-list img {
     height: auto;
     width: 70%;
     display: block;
-    
+
     margin-bottom: 15px;
   }
 
@@ -721,39 +740,52 @@ input[type="submit"] {
   .projects > p {
     padding: 10px 50px;
   }
- 
-/* the Hobbies*/
 
-.hobbies {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
-}
+  /* the Hobbies*/
 
-.slideshow-container {
-  padding-left: 0px;
-}
+  .hobbies-description > h2 {
+    margin: 0 auto;
+  }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 10px 2px;
-}
+  .hobbies-description > p {
+    margin: 0 auto;
+    line-height: 1.3em;
+    font-size: 0.9em;
+  }
 
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
 
-  
-  footer div {
-    height: 30px;
+  .hobbies {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .slideshow-container {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
   }
 
   .f-img {
-    width: auto;
-    height: 50%;
+    width: 20px;
+    height: 20px;
     align-content: center;
+    padding-top: 3px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 990px) {
+@media only screen and (min-width: 601px) and (max-width: 991px) {
   .nav-menu {
     display: none;
   }
@@ -801,8 +833,6 @@ input[type="submit"] {
     font-size: 1.5em;
   }
 
-
-
   .random-things {
     display: flex;
     flex-direction: column;
@@ -812,7 +842,7 @@ input[type="submit"] {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
   .random-text {
     height: auto;
     padding: 20px;
@@ -820,20 +850,20 @@ input[type="submit"] {
     border: 2px solid purple;
     background-color: #fcdff0;
   }
-  
+
   .random-text h2 {
     font-size: 2.3em;
     padding: 5px 5px 15px 15px;
     color: purple;
   }
-  
+
   .random-text > p {
     font-size: 1em;
     padding-left: 5px;
     padding-bottom: 20px;
     line-height: 1.1em;
   }
-  
+
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -854,10 +884,10 @@ input[type="submit"] {
 
   /* courses & skills */
 
-  .projects{
+  .projects {
     padding-top: 10px;
   }
-  
+
   .project-list {
     display: flex;
     justify-content: space-around;
@@ -865,9 +895,9 @@ input[type="submit"] {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top:10px;
+    margin-top: 10px;
   }
-  
+
   .project-list img {
     height: auto;
     width: 100%;
@@ -888,39 +918,52 @@ input[type="submit"] {
   .projects > p {
     padding: 10px 50px;
   }
- 
- /* the Hobbies*/
-  
- .hobbies {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
+
+  /* the Hobbies*/
+
+  .hobbies-description > h2 {
+    margin: 0 auto;
+  }
+
+  .hobbies-description > p {
+    margin: 0 auto;
+    line-height: 1.3em;
+    font-size: 0.9em;
+  }
+
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .hobbies {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .slideshow-container {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+  }
+
+  .f-img {
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    padding-top: 3px;
+  }
 }
 
-.slideshow-container {
-  padding-left: 0px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 10px 2px;
-}
-
-
-
-  footer div {
-   height: 30px;
- }
-
- .f-img {
-   width: auto;
-   height: 50%;
-   align-content: center;
- }
-}
-
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 992px) {
   .title {
     font-size: 4em;
     padding-right: 100px;
