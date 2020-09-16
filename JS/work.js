@@ -16,11 +16,5 @@ for (i = 0; i < coll.length; i++) {
     this.classList.toggle("active-collapse");
     var content = event.target.parentElement.nextElementSibling
     content.classList.toggle("active-collapse-content");
-
-    //if (content.style.maxHeight){
-      //content.style.maxHeight = null;
-    //} else {
-      //content.style.maxHeight = content.scrollHeight + "px";
-    //} 
   });
 }
